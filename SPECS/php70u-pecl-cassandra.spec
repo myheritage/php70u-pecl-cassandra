@@ -6,10 +6,12 @@
 #global gh_short    %%(c=%%{gh_commit}; echo ${c:0:7})
 %global gh_owner    datastax
 %global gh_project  php-driver
+%global prefix /usr 
+%global buildver 2.6
 
 Summary: DataStax PHP Driver for Apache Cassandra
 Name: %{php_base}-pecl-%{pecl_name}
-Version: 1.1.0
+Version: 1.3.0
 Release: 1.MyHeritage.ius%{?dist}
 License: ASL 2.0
 Group: Development/Libraries
