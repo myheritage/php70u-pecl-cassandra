@@ -1,5 +1,5 @@
 %global pecl_name cassandra
-%global php_base php70u
+%global php_base php72u
 %global ini_name  40-%{pecl_name}.ini
 %global with_zts 0%{?__ztsphp:1}
 #global gh_commit   2b0642b1d6fc451f0481edaf0163e3e5bbf896ec
@@ -22,15 +22,15 @@ Source0:       http://pecl.php.net/get/%{pecl_name}-%{version}%{?prever}.tgz
 %endif
 Source1: %{pecl_name}.ini
 URL: http://pecl.php.net/package/%{pecl_name}
-BuildRequires: %{php_base}-pear
+BuildRequires: pear1u
 BuildRequires: %{php_base}-devel
 # https://pecl.php.net/package-info.php?package=cassandra&version=3.4.0RC2
 BuildRequires: cassandra-cpp-driver-devel
 BuildRequires: libuv-devel
 BuildRequires: gmp-devel
 %if 0%{?fedora} < 24
-Requires(post): %{php_base}-pear
-Requires(postun): %{php_base}-pear
+Requires(post): pear1u
+Requires(postun): pear1u
 %endif
 Requires: php(zend-abi) = %{php_zend_api}
 Requires: php(api) = %{php_core_api}
