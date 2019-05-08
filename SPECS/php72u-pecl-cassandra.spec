@@ -11,7 +11,7 @@
 
 Summary: DataStax PHP Driver for Apache Cassandra
 Name: %{php_base}-pecl-%{pecl_name}
-Version: 1.3.0
+Version: 1.3.2
 Release: 1.MyHeritage.ius%{?dist}
 License: ASL 2.0
 Group: Development/Libraries
