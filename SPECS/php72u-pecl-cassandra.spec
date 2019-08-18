@@ -1,5 +1,5 @@
 %global pecl_name cassandra
-%global php_base php72u
+%global php_base %{_php_base:php72u}
 %global ini_name  40-%{pecl_name}.ini
 %global with_zts 0%{?__ztsphp:1}
 #global gh_commit   2b0642b1d6fc451f0481edaf0163e3e5bbf896ec
